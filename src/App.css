@@ -1,0 +1,9 @@
+.bg-overlay::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #01a52100, #01a521);
+    width: 100%;
+}
