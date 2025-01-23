@@ -23,7 +23,7 @@ function NavItem({children, to, last}){
     return(
         <a href={to} 
             className={`no-underline hover:text-white transition duration-250
-                ${ last? "text-green-light border-1 border-green-light p-1 px-2 rounded-2xl hover:bg-green-light"
+                ${ last? "text-white p-1 px-2 rounded-2xl bg-green-light"
                 :"text-gray-400 hover:shadow-white hover:drop-shadow active:text-green-light"
                 }`}
         >
