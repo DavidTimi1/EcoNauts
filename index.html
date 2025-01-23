@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Forest Futures - Engage, Educate, Entertain</title>
     <meta name="description" content="Forest Futures combines entertainment and education to promote sustainability and forest conservation. Discover shows, activities, and initiatives to create a greener future.">
 
@@ -32,12 +32,33 @@
 
     <!-- Favicon -->
     <link rel="icon" href="https://www.forestfutures.com/images/favicon.ico" type="image/x-icon">
-  </head>
-  <body class="w-screen h-screen m-0 p-0 bg-green-dark text-white overflow-x-hidden overflow-y-auto font-sans">
 
-    <div id="loading-animation" class="flex items-center justify-center w-max h-max">
+    <style>
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: #044f0f;
+        color: white;
+        overflow: hidden auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      #loading-animation .animated {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="loading-animation" style="width: 100vw;height: 100vh">
       <svg
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      class="animated"
         width="200"
         height="200"
         viewBox="0 0 200 200"
