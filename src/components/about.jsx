@@ -14,7 +14,7 @@ export default function About(){
 
 				<p style={{maxWidth: "min(80%, 500px)"}}>
                     At 
-                    <span style={{textShadow: "0 0 3px black"}} className="text-xl">
+                    <span style={{textShadow: "0 0 3px white"}} className="text-xl">
                         <BrandedName />
                     </span>, we combine entertainment and education to promote sustainability and forest conservation.
 				   Join us in our journey to create a greener future.
