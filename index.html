@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Forest Futures - Engage, Educate, Entertain</title>
+    <meta name="description" content="Forest Futures combines entertainment and education to promote sustainability and forest conservation. Discover shows, activities, and initiatives to create a greener future.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Forest Futures Team">
+    <meta name="keywords" content="Forest conservation, sustainability, green entertainment, reforestation, biodiversity, sustainable living, eco-friendly innovation">
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Forest Futures - Engage, Educate, Entertain">
+    <meta property="og:description" content="Explore our captivating shows that combine entertainment with education to promote forest conservation and sustainability.">
+    <meta property="og:url" content="https://www.forestfutures.com">
+    <meta property="og:image" content="https://www.forestfutures.com/images/forest-hero.jpg">
+    <meta property="og:image:alt" content="A lush forest scene with sunlight streaming through the trees and people planting new trees.">
+    <meta property="og:site_name" content="Forest Futures">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Forest Futures - Engage, Educate, Entertain">
+    <meta name="twitter:description" content="Discover innovative shows and activities that educate and inspire sustainable living and forest conservation.">
+    <meta name="twitter:image" content="https://www.forestfutures.com/images/forest-hero.jpg">
+    <meta name="twitter:image:alt" content="A vibrant forest scene promoting sustainability.">
+    <meta name="twitter:site" content="@ForestFutures">
+    <meta name="twitter:creator" content="@ForestFutures">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.forestfutures.com/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="w-screen h-screen m-0 p-0 bg-green-dark text-white overflow-x-hidden overflow-y-auto font-sans">
+
+    <div id="loading-animation" class="flex items-center justify-center w-max h-max">
+      <svg
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        width="200"
+        height="200"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+
+        <!-- Soil -->
+         
+        <rect y="140" width="200" height="60" fill="#8b5a2b" />
+
+        <!-- Seed -->
+        <circle
+          cx="100"
+          cy="150"
+          r="8"
+          fill="#d4a76a"
+          stroke="#8b5a2b"
+          stroke-width="2"
+          id="seed"
+        />
+
+        <!-- Sprout -->
+        <!-- Stem -->
+         <g id="sprout"  opacity="0">
+
+        <rect x="98" y="130" width="4" height="10" fill="#8bc34a" />
+
+        <!-- Leaves -->
+        <path
+          d="M100,130 C95,125 90,125 90,120 C90,115 95,110 100,115 C105,110 110,115 110,120 C110,125 105,125 100,130 Z"
+          fill="#8bc34a"
+        />
+        <path
+          d="M100,140 C98,120 92,120 92,110 C92,100 100,90 108,110 C108,120 102,120 100,140 Z"
+          fill="#8bc34a"
+        />
+        </g>
+
+        <style>
+          #seed {
+            animation: bounce 2s infinite;
+          }
+
+          #sprout {
+            animation: grow 2s infinite;
+            transform-origin: center bottom;
+          }
+
+          @keyframes bounce {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(5px);
+            }
+          }
+
+          @keyframes grow {
+            0%, 30% {
+              opacity: 0;
+              transform: scale(0.8) translateY(5px);
+            }
+            75% {
+              opacity: 1;
+              transform: scale(1) translateY(0px);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(2) translateY(-10);
+            }
+          }
+        </style>
+      </svg>
+
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const loadingAnimation = document.getElementById('loading-animation');
+        const root = document.getElementById('root');
+        root.style.display = 'none';
+        setTimeout(() => {
+          loadingAnimation.style.display = 'none';
+          root.style.display = 'block';
+        }, 3000); // Adjust the timeout as needed
+      });
+    </script>
+
+    <div id="root" class="hidden"></div>
+    </div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
