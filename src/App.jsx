@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import Home from './components/home';
 import Footer from './components/footer';
 import About from './components/about';
+import Mission from './components/mission';
+import Innovations from './components/innovations';
 
 function App() {
 	const [scroll, setScroll] = useState(false);
@@ -23,24 +25,12 @@ function App() {
 			<Home />
 
 			<About />
-			
-			<section id="shows" className="shows-section">
-				<h2>Our Shows</h2>
-				<div className="show-cards">
-					<div className="card">
-						<h3>Forest Guardians</h3>
-						<p>Teams compete in real-world challenges like reforestation and biodiversity conservation.</p>
-					</div>
-					<div className="card">
-						<h3>The Eco-Build Challenge</h3>
-						<p>Design and build sustainable shelters using eco-friendly materials.</p>
-					</div>
-					<div className="card">
-						<h3>Forest Quest</h3>
-						<p>A survival competition with a focus on forest preservation and sustainability.</p>
-					</div>
-				</div>
-			</section>
+
+			<Mission />
+
+			<Innovations />
+
+			<ContactUs />
 
 			<Footer />
 		</main>
