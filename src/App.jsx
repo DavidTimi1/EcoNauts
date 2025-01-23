@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import About from './components/about';
 import Mission from './components/mission';
 import Innovations from './components/innovations';
+import ContactUs from './components/contact';
 
 function App() {
 	const [scroll, setScroll] = useState(false);
