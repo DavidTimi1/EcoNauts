@@ -7,6 +7,10 @@ const Mission = () => {
   return (
     <div className="bg-gray-50 p-6 md:p-12">
       <section className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl">
+            Our <span> Mission </span>
+        </h2>
+
         <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
           Our mission is to create and provide{" "}
           <span className="text-green-600">innovative, eco-friendly solutions</span> that
@@ -15,9 +19,6 @@ const Mission = () => {
         <p className="text-gray-600 mt-4">
           We believe in a future where style and sustainability coexist harmoniously.
         </p>
-        <button className="mt-6 px-6 py-3 bg-green-700 text-white rounded-lg shadow hover:bg-green-800">
-          About GreenPark
-        </button>
       </section>
 
       <section className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

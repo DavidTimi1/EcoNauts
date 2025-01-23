@@ -1,5 +1,5 @@
 import Logo, { BrandedName } from "../ui/logo";
-import mainBg from "../assets/tree.png"
+import mainBg from "../assets/tree.png";
 import Button from "../ui/button";
 
 
@@ -22,10 +22,7 @@ export default function Home(){
                         </p>
 
                         <Button>
-                            Hello
-                        </Button>
-                        <Button unEmph>
-                            Hello There!
+                            Join Us
                         </Button>
                     </div>
                 </div>
