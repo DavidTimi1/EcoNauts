@@ -8,28 +8,37 @@ export default function Innovations(){
                 <h2 className="text-4xl text-white text-center">
 					The Green Challenge Series <br></br> | Our Innovations
                 </h2>
-
-				<div className="grid grid-cols-2 gap-6">
-                
-					<div className="card">
-						<h3>Forest Guardians</h3>
-						<p>Teams compete in real-world challenges like reforestation and biodiversity conservation.</p>
-					</div>
-					<div className="card">
-						<h3>The Eco-Build Challenge</h3>
-						<p>Design and build sustainable shelters using eco-friendly materials.</p>
-					</div>
-					<div className="card">
-						<h3>Forest Quest</h3>
-						<p>A survival competition with a focus on forest preservation and sustainability.</p>
-					</div>
-				</div>
-
-
-
+				
+				{
+					cards.map( card => <Card title={card.title} descr={card.descr} /> )
+				}
 
 
             </div>
         </section>
     )
 }
+
+
+function Card({title, descr}){
+
+	return (
+		<div className="card">
+			<h3> {title} </h3>
+			<p> {descr} </p>
+		</div>
+	)
+}
+
+
+const cards = [
+	{
+		title: "Forest Guardians", descr: "Teams compete in real-world challenges like reforestation and biodiversity conservation."
+	},
+	{
+		title: "The Eco-Build Challenge", descr: "Design and build sustainable shelters using eco-friendly materials."
+	},
+	{
+		title: "Forest Quest", descr: "A survival competition with a focus on forest preservation and sustainability."
+	},
+]
