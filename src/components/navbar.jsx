@@ -7,9 +7,9 @@ export default function NavBar({scrolling}){
         <div className="w_full">
             <nav className={`w-full flex-col md:flex-row px-2 py-2 md:px-5 top-0 left-0 ${scrolling? "border-b-yellow-900 fixed" : "border-transparent"}`}>
                 <div className="w-full flex items-center justify-between">
-                    <div className="text-2xl">
+                    <a href="#" className="text-2xl no-underline text-inherit">
                         <Logo />
-                    </div>
+                    </a>
 
                     <div className="hidden md:block text-lg">
                         <NavList />

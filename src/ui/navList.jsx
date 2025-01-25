@@ -1,7 +1,7 @@
 
 const navs = [
     {text: "About Us", link: "#about"},
-    {text: "Features", link: "#features"},
+    {text: "Mission", link: "#mission"},
     {text: "Innovations", link: "#innovations"},
     {text: "Contact Us", link: "#contact-us", last: true},
 ]
