@@ -12,11 +12,6 @@ import ContactUs from './components/contact';
 
 function App() {
 	const [scroll, setScroll] = useState(false);
-	
-	useEffect(() => {
-		document.querySelector(":root").onscroll = handleScroll;
-		console.log(document.querySelector(":root"));
-	})
 
 	return (
 		<>
@@ -39,11 +34,11 @@ function App() {
 		</>
 	)
 	
-	function handleScroll(e){
-		const isScrolling = e.target.scrollTop > 10;
-		console.log(e.target.scrollTop, isScrolling)
-		scroll != isScrolling && (setScroll(isScrolling));
-	}
+	// function handleScroll(e){
+	// 	const isScrolling = document.body.scrollTop > 10;
+	// 	console.log(document.body.scrollTop, isScrolling);
+	// 	scroll != isScrolling && (setScroll(isScrolling));
+	// }
 
 }
 

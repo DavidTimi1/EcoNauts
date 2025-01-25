@@ -5,7 +5,7 @@ export default function About(){
 
     return (
 
-        <section id="about" className="py-10 w-full bg-green-light">
+        <section id="about" className="py-10 scroll-pt-10 w-full bg-green-light">
             <div className="w-full p-2 md:px-5 flex flex-col items-center justify-center gap-3">
                 <h2 className="text-4xl">
                     About <span> Us </span>

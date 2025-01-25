@@ -1,6 +1,6 @@
 const ContactUs = () => {
 	return (
-        <section id="contact-us" className="py-10 w-full bg-green-light">
+        <section id="contact-us" className="py-10 scroll-pt-10 w-full bg-green-light">
             <div className="w-full p-2 md:px-5 flex flex-col items-center justify-center gap-3">
 
 				<div className="text-center">
