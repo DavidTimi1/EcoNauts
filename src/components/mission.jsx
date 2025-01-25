@@ -4,7 +4,7 @@ import MissionAesthetics from "../ui/mission";
 
 const Mission = () => {
 	return (
-		<div className="bg-gray-50 w-full scroll-pt-10">
+		<div id="mission" className="bg-gray-50 w-full scroll-pt-10">
 			<section className="w-full py-10 px-2 md:px-5 text-center flex flex-col gap-3">
 
 				<MissionAesthetics />
