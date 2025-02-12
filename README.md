@@ -1,2 +1,2 @@
 # EcoNauts
-NACOSS hackerthon project
+NACOSS hackerthon project.
